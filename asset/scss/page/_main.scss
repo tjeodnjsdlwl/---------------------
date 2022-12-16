@@ -1,0 +1,240 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url(https://jeon-hyerin.github.io/landing/assets/images/bg/overlay.gif);
+    background-position: 0 0;
+    background-size: 250px;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 300;
+}
+
+
+
+#container {
+    // padding-top: 7vw;
+    // overflow: hidden;
+}
+
+.sc-main {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;left: 0;
+    .inner {
+        display: flex;
+        height: 100%;
+    }
+
+    .title-area {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .title {
+            display: block;
+            max-width: 800px;
+            width: 100%;
+            font-size: 20vw;
+            text-transform: uppercase;
+            opacity: 1;
+            white-space: nowrap;
+            font-family: 'new';
+        }
+    }
+
+    .deco1{
+        position: absolute;
+        left: 2vw;
+        bottom: 5vw;
+        max-width: 30vw;
+        line-height: 1.2;
+    }
+    .deco2{
+        position: absolute;
+        top: 2vw;
+        left: 30vw;
+        line-height: 1.2;
+    }
+    .deco3{
+        position: absolute;
+        right: 2vw;
+        bottom: 20vw;
+        max-width: 30vw;
+        line-height: 1.2;
+    }
+
+
+
+
+    .img-box{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        &.box1{
+            top: 2vw;
+            left: 50vw;
+        }
+        &.box2{
+            width: 200px;
+            height: 200px;
+            top: 10vw;
+            right: 2vw;
+        }
+        &.box3{
+            width: 300px;
+            height: 300px;
+            right: 20vw;
+            bottom: 0vw;
+        }
+    }
+}
+
+.sc-work {
+    height: 100vh;
+    margin-top: 100vh;
+
+    .swiper {
+        height: 100%;
+    }
+
+    .btn{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: 2;
+        width: 150px;
+        background: #f00;
+        &.prev{left: 0;
+            background: rgb(40,40,46);
+background: linear-gradient(93deg, rgba(40,40,46,1) 39%, rgba(40,40,46,0) 70%);
+        }
+        &.next{right: 0;
+            background: rgb(40,40,46);
+background: linear-gradient(281deg, rgba(40,40,46,1) 39%, rgba(40,40,46,0) 70%);
+        }
+    }
+
+    // #3534db
+    .swiper-wrapper {
+        .swiper-slide {
+            overflow: hidden;
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            // flex-direction: row-reverse;
+            background: #28282e;
+            color: #fff;
+
+            &.naver {
+            }
+
+            &.city {
+            }
+
+            &.andar {
+            }
+
+            &.beyondLive {
+            }
+
+            &.kream {
+               
+            }
+
+            &.apple {
+              
+            }
+
+            .img-area{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+                position: absolute;
+                &.img1{
+                    top: 2vw;
+                    left: 50vw;
+                }
+                &.img2{
+                    width: 200px;
+                    height: 200px;
+                    top: 10vw;
+                    right: 2vw;
+                }
+                &.img3{
+                    width: 300px;
+                    height: 300px;
+                    right: 20vw;
+                    bottom: 5vw;
+                }
+            }
+
+            .des-area {
+                width: 600px;
+
+                h3 {
+                    font-size: 15vw;
+                    font-family: 'new';
+                    margin-bottom: 20px;
+                    white-space: nowrap;
+                }
+
+                p {
+                    font-size: 1.3em;
+                    line-height: 31px;
+                    margin-bottom: 30px;
+                }
+
+                .btn-box {
+                    font-size: 14px;
+                    line-height: 24px;
+                    display: flex;
+                    gap: 50px;
+
+                    a {
+                        display: block;
+                        text-transform: uppercase;
+                        // &.btn-view {}
+                        // &.btn-review {}
+
+                        &::after {
+                            content: '';
+                            display: inline-block;
+                            width: 8px;
+                            height: 8px;
+                            border: 3px solid #fff;
+                            border-width: 0 2px 2px 0;
+                            transform: rotate(-45deg);
+                            margin-left: 5px;
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 10%;
+        --swiper-theme-color: #9281ff;
+    }
+}
